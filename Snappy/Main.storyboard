@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contacts View Controller-->
+        <scene sceneID="Ich-tC-Ie0">
+            <objects>
+                <viewController storyboardIdentifier="left" id="O1d-FW-C7I" customClass="ContactsViewController" customModule="Snappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ccs-Wa-muh"/>
+                        <viewControllerLayoutGuide type="bottom" id="RrG-Bl-MRe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Go2-qh-A7t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.78415978388996188" green="1" blue="0.71719026300528321" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYn-8g-UIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="116"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="dt0-NA-rK2">
+            <objects>
+                <viewController storyboardIdentifier="top" id="oO4-j5-C4G" customClass="SettingsViewController" customModule="Snappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9II-AT-B24"/>
+                        <viewControllerLayoutGuide type="bottom" id="fM5-uI-vZ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hbv-FQ-Ljq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75819955327554944" green="0.80487628622489504" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLu-z3-btw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="-748"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="1wh-Hq-aXE">
+            <objects>
+                <viewController storyboardIdentifier="middle" id="5PL-Mc-0ME" customClass="CameraViewController" customModule="Snappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cd4-gZ-xKb"/>
+                        <viewControllerLayoutGuide type="bottom" id="EIt-ym-B0H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TZK-1B-tWP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYu-ix-g9u" customClass="TakePhotoButton" customModule="Snappy" customModuleProvider="target">
+                                <rect key="frame" x="162" y="567" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="NSR-uG-xsg"/>
+                                    <constraint firstAttribute="height" constant="50" id="VHz-Rl-gkp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="takePhotoButtonActionWithSender:" destination="5PL-Mc-0ME" eventType="touchUpInside" id="pVY-Lt-eAD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60738816993789269" blue="0.63172923965292771" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LYu-ix-g9u" firstAttribute="centerX" secondItem="TZK-1B-tWP" secondAttribute="centerX" id="MdB-j8-x2j"/>
+                            <constraint firstItem="EIt-ym-B0H" firstAttribute="top" secondItem="LYu-ix-g9u" secondAttribute="bottom" constant="50" id="oQg-TH-qku"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="takePhotoButton" destination="LYu-ix-g9u" id="StH-YM-uWe"/>
+                        <outlet property="takePhotoButtonHeight" destination="VHz-Rl-gkp" id="MUG-0d-Xyh"/>
+                        <outlet property="takePhotoButtonWidth" destination="NSR-uG-xsg" id="dqj-sk-fQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFP-pe-buk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="122.78860569715144"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="yGd-si-gek">
+            <objects>
+                <viewController storyboardIdentifier="right" id="0Na-W2-e2e" customClass="StoryViewController" customModule="Snappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Df-Cg-6BH"/>
+                        <viewControllerLayoutGuide type="bottom" id="AGK-P1-hHz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UqW-by-bFc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96018020354696376" green="0.40127594007802259" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V09-Sw-kgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="123"/>
+        </scene>
+    </scenes>
+</document>
