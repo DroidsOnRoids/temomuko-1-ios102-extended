@@ -39,7 +39,7 @@ final class TakePhotoButton: UIButton {
     
     func animateColorWithCompletionWhichRevertToDefault(color: UIColor) {
         UIView.animate(withDuration: 0.35, animations: {
-           self.backgroundColor = .white
+           self.backgroundColor = color
         }) { _ in
             self.animateColor(color: .clear)
         }
